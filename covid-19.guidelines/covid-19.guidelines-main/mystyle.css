@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+:root{
+	--light: #6f0aab;
+	--dark: rgb(69, 0, 98);
+}
+*{
+	font-family: "Poppins",sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+*::selection{
+	background: rgb(69, 0, 98);
+	color: #fff;
+}
+html{
+	font-size: 62.5%;
+	overflow-x: hidden; 
+}
+header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;left: 0;
+	z-index: 1000; 
+	padding: 2em;
+	height: 8em;
+	background-color: rgba(69, 0, 98,0.3); 
+
+}
+header.sticky{
+	box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
+}
+header .logo{
+	font-size: 3em;
+	color: rgb(69, 0, 98);
+}
+header .logo span{
+	color: rgb(69, 0, 98);
+}
+header .navbar a{
+	font-size: 1.9em;
+	margin: 0.7em;
+	padding: 0.7em;
+	border-radius: 0.5em;
+	color: rgb(69, 0, 98);
+	font-weight: bold;
+}
+header .navbar a.active,header .navbar a:hover{
+	background-color: rgb(69, 0, 98);
+	color: white;
+	box-shadow: 0 0.5em 1em black; 
+}
+#bar{
+	font-size: 2.5em;
+	color: black;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+}
+body{
+	height: 300em;
+}
+section{
+	min-height: 100vh;
+	padding: 13em 4em 1em;
+}
+.heading{
+	text-align: center;
+	color: rgb(69, 0, 98);
+	font-size: 4em;
+	font-weight: bolder;
+}
+
+/*Home*/
+
+.Home-bg{
+	opacity: 0.5;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	min-width: 1000px;
+	width: 100%;
+	height: 100%;
+}
+.Home{
+	overflow: hidden;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+	flex-wrap: wrap;
+}
+.Home .content{
+	position: relative;
+	text-align: center;
+	padding-top: 10em;
+}
+.Home .content h1{
+	font-size: 5em;
+	color: rgb(69, 0, 98);
+}
+.Home .content h3{
+	font-size: 3em;
+	font-weight: bold;
+	color: rgb(69, 0, 98);
+}
+.Home .content .button{
+	display: inline-block;
+	padding: 0.7em 3em;
+	color: white;
+	background-color: rgb(69, 0, 98);
+	border-radius: 1em;
+	box-shadow: 0 0.5em 1em black;
+	margin-top: 1em;
+	font-size: 1.7em;
+}
+.Home .content .button:hover{ 
+	font-size: 2em;
+}
+
+/*Prevent*/
+
+.Prevent .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.Prevent .box-container .box{
+	flex: 1 1 40em;
+	border-radius: 5em;
+	margin: 0.6em;
+	padding: 1em;
+	text-align: center;
+	background-color: rgba(69, 0, 98,0.2);
+}
+.Prevent .box-container img{
+	float: right;
+	height: 15em;
+	padding: 1em;
+}
+.Prevent .box-container h3{
+	color: rgb(69, 0, 98);
+	font-size: 2em;
+}
+.Prevent .box-container p{
+	color: rgb(69, 0, 98);
+	font-size: 1.5em;
+	padding: 1em;
+}
+.Prevent .box-container .box:hover{
+	box-shadow: 0 0.5em 1em rgba(69, 0, 98,0.5);
+}
+
+/*Symptoms*/
+
+.Symptoms{
+	background-color: rgba(69, 0, 98,0.15);;
+	overflow: hidden;
+	position: relative;
+}
+.Symptoms .column{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Symptoms .column .symptoms-main img{
+	width: 38vh;
+	margin-left: 13em;
+	margin-right: 5em;
+}
+.Symptoms .column .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.Symptoms .column .box-container .box{
+	flex: 1 1 25em;
+	margin:1em;
+	text-align: center;
+}
+.Symptoms .column .box-container .box img{
+	width: 20em;
+	padding: 1em;
+}
+.Symptoms .column .box-container .box img:hover{
+	box-shadow: 0 0.5em 1em rgba(69, 0, 98,0.5);
+}
+.Symptoms .column .box-container .box h3{
+	font-size: 2em;
+	color: rgb(69, 0, 98);
+}
+
+/*Precautions*/
+.Precautions{
+	
+}
+.Precautions .column{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.Precautions .column .box-container{
+	margin: 1.5em;
+	flex: 1 1 50em;
+	border: 0.1em solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.5em 1em rgba(69, 0, 98,0.5);
+	/*border-radius: 5em;*/
+}
+.Precautions .column .box-container .title{
+	padding: 0.5em;
+	text-align: center;
+	font-size: 2em;
+	box-shadow: 0 0.5em 1em rgba(112, 190, 17,0.5);
+	background: rgb(112, 190, 17);
+	color: white;
+	/*border-radius: 1em;*/
+}
+.Precautions .column .box-container:last-child .title{
+	background: red;
+	box-shadow: 0 0.5em 1em rgba(255, 0, 0,0.5);
+}   
+.Precautions .column .box-container .box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+.Precautions .column .box-container .box img{
+	width: 12em;
+	padding: 1em;
+}
+.Precautions .column .box-container .box h3{
+	font-size: 2em;
+	color: rgb(69, 0, 98);
+}
+.Precautions .column .box-container .box p{
+	font-size: 1.2em;
+	color: rgb(69, 0, 98);
+}
+
+/*Doctors*/
+
+.Doctors{
+	background-color: rgba(69, 0, 98,0.15);
+	overflow: hidden;
+	position: relative;
+}
+.Doctors h2{
+	text-align: center;
+	color: rgb(69, 0, 98);
+	font-size: 2em;
+	font-weight: 300;
+	height: 3em;
+	border-bottom: 0.1em solid rgba(0, 0, 0, 0.1);
+	margin: 1em;
+}
+.Doctors .box-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.Doctors .box-container .box{
+	flex: 1 1 20em;
+	border-radius: 5em;
+	box-shadow: 0 0.5em 1em rgba(69, 0, 98,0.5);
+	padding: 1em;
+	margin: 1.5em;
+	text-align: center;
+	background: white;
+	border: 1em solid rgba(0, 0, 0, 0.1);
+	width: 20em;
+}
+.Doctors .box-container .box:hover{
+	border-radius: 0em;
+}
+.Doctors .box-container .box img{
+	margin: 1em;
+	border-radius: 20em;
+	width: 20vh;
+	object-fit: cover;
+	background: rgb(69, 0, 98);
+}
+.Doctors .box-container .box h3{
+	font-size: 2em;
+	color: rgb(69, 0, 98);
+}
+.Doctors .box-container .box span{
+	font-size: 1.5em;
+	color: rgb(69, 0, 98);
+}
+.Doctors .box-container .box .social{
+	border-top: .1em solid rgba(0, 0, 0, 0.1);
+	padding: 1em;
+	margin-top: 1em;
+}
+.Doctors .box-container .box .social a{
+	border-radius: 50%;
+	height: 1em;
+	width: 1em;
+	margin: .2em;
+	line-height: 2em;
+	font-size: 2em;
+	background: white;
+	color: rgb(69, 0, 98);
+}
+.Doctors .box-container .box .social a:hover{
+	background: rgb(69, 0, 98);
+	color: white;
+}
+
+/*Hand-Wash*/
+
+.Hand-Wash{
+	background-color: rgba(69, 0, 98,0.15);
+}
+.Hand-Wash .column{
+	display: flex;
+	justify-content: center;
+}
+.Hand-Wash .column .box-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.Hand-Wash .column .box-container .box img{
+	margin-top: 0.3em;
+	margin-left: 0.5em;
+	height: 17em;
+}
+.Hand-Wash .column .box-container .box img:hover{
+	box-shadow: 0 0.5em 1em rgba(69, 0, 98,0.5);
+}
+
+/*About Us*/
+
+.footer{
+	background-color: rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+	position: relative;
+}
+.footer .box-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer .box-container .box{
+	flex: 1 1 25em;
+	margin: 2em;
+}
+.footer .box-container .box h3{
+	font-size: 3em;
+	color: white; 
+	padding: 1em 0;
+}
+.footer .box-container .box a{
+	font-size: 1.7em;
+	color: white; 
+	padding: 0.5em 0;
+	display: block;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+.footer .credit{
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	border-top: .1em solid rgba(225, 225, 225, 0.1);
+	padding: 2.5em 1em;
+	color: white;
+}
+.footer .credit a{
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+}
+/*media queries*/
+@media (max-width: 1200px){
+	html{
+		font-size: 55%;
+	}
+}
+@media (max-width: 991px){
+	#bar{
+		display: block;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%; left: 0;
+		width: 100%;
+		padding: 2em;
+		border-top: 0.1em solid rgba(0, 0, 0, .1);
+		transform-origin: top; 
+		transform: scaleY(0);
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+	header .navbar a{
+		color: white;
+		display: block;
+		margin: 2em;
+	}
+	header .navbar.nav-toggle{
+		transform: scaleY(1);
+		opacity: 1;
+	}
+	.fa-times{
+		transform: rotate(90deg);
+	}
+	section{
+	padding: 1em 9%;
+	padding-top: 8em;
+	}
+	.Symptoms .column .symptoms-main img{
+		display: none;
+	}
+}
+@media (max-width:768px){
+	html{
+		font-size: 50%;
+	}
+	.Home .content h1{
+		font-size: 4em;
+	}
+	.Home .content h3{
+		font-size: 2,5em;
+	}
+}
+@media (max-width:450px){
+	.Home .content h1{
+		font-size: 3.5em;
+	}
+	.Home .content h3{
+		font-size: 2em;
+	}
+	.Symptoms .column .box-container .box img{
+		width: 13em;
+	}
+	.Doctors .box-container .box{
+		width: 100%;
+	}
+}
